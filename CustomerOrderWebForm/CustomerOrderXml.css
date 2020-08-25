@@ -1,0 +1,192 @@
+﻿a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #C80018;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #C80018;
+    text-decoration: underline;
+}
+
+body {
+    margin: 5px 0 0 0;
+    background-color: #888888;
+    font-family: Arial;
+    font-size: 8pt;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    text-align: center;
+    border: solid 1px #9f9f9f;
+}
+
+    input[type=text]:focus {
+        background-color: #ffffd5;
+    }
+
+#dvErrorMessage {
+    color: red;
+    font-size: 16pt;
+    text-align: center;
+}
+
+/*  #tblFormHeader	{background-image: url(../images/headerBK.gif); }  */
+#tblFormHeader {
+    background-image: linear-gradient(to bottom, darkgray, white)
+}
+
+#FormTitle {
+    font-weight: 600;
+    font-size: 14pt;
+    color: #336666;
+}
+
+#dvUserName {
+    font-weight: 600;
+    font-size: 8pt;
+    color: #800000;
+    text-transform: capitalize;
+}
+
+#Filters input[type=text] {
+    width: 98%;
+    border: none;
+}
+
+#Filters td {
+    border: solid 1px #e6e6e6;
+}
+
+#dvReportBody, #dvReportHeader, #dvReportFooter {
+    width: 98%;
+    margin: auto;
+}
+
+#tblReportBody {
+    margin: auto;
+    border: solid 1px #cccccc;
+}
+
+    #tblReportBody td {
+        border: solid 1px #cccccc;
+    }
+
+    #tblReportBody tr:hover {
+        background-color: #E8F1FF;
+    }
+
+    #tblReportHeader th, #tblReportBody th, #tblReportFooter th, #tblReportFooter td {
+        background-color: #f6f6f6;
+        border: solid 1px #cccccc;
+    }
+
+    /* additional Header & Footer within tblReport for printed output */
+    #tblReportBody thead, #tblReportBody tfoot {
+        display: none;
+    }
+
+
+#dvMessageToUser {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 6;
+    overflow: visible;
+    height: 100px;
+    width: 300px;
+    display: none;
+    border: solid 1px #708090;
+    background-color: #ffffff;
+}
+
+#dvUpload {
+    width: 500px;
+    margin: auto;
+    border: solid 1px #cccccc;
+    display: none;
+    z-index: 3;
+    background-color: #ffffff;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+#tblUpload {
+    width: 98%;
+    margin: auto;
+}
+
+#FileToUpload {
+    border: solid 1px #cccccc;
+}
+
+
+#PageLayout {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 965px;
+    border: solid 1px #cccccc;
+    margin: auto;
+}
+
+#dvReportBody {
+    max-height: calc(100vh - 185px);
+    overflow-y: scroll;
+}
+
+.rwFooter th {
+    text-align: left;
+}
+
+.rwSubtotal th {
+    text-align: left;
+}
+
+@Media print {
+    Body {
+        background-color: #ffffff;
+    }
+
+    #dvReportBody {
+        display: block;
+        border: none;
+        height: auto;
+        overflow: visible;
+    }
+
+    #tblReportBody thead {
+        display: table-header-group;
+    }
+
+    #tblReportBody tfoot {
+        display: table-footer-group;
+    }
+
+    #tblReportHeader, #tblReportFooter {
+        display: none;
+    }
+
+    #PageLayout {
+        border: none;
+    }
+}
