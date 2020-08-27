@@ -11,4 +11,7 @@ The Northwind used for the project is replicated from the original Northwind wit
 
 SQL Script to create the Northwind sample database is provided in the \SampleDatabase folder.
 
+Notes:
+ - The codes in this project are intended to help develop to learn SQL database access, event handling in JavaScript and accessing SOAP web-service in JavaScript using XMLHttpRequest.
 
+ - Security best practices are not being followed in this sample project, such as database connection secret should be placed in a secured environment (like Azure key vault).
